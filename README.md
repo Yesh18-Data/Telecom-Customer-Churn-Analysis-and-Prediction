@@ -92,15 +92,15 @@ No. of rows=6418, No. of columns=32. The dataset consists of customer informatio
 17. Created a new table `tbl_Measures` to store all the measures we will create.
 18. Created a new measure `Total Customers` using DAX formula.
     ```bash
-    Total Customers = COUNT(prod_Churn[Customer_ID])
+    Total Customers = COUNT(prod_Customer[Customer_ID])
     ```
 19. Created a new measure `New Joiners` using DAX formula.
     ```bash
-    New Joiners = CALCULATE(COUNT(prod_Churn[Customer_ID]), prod_Churn[Customer_Status] = "Joined")
+    New Joiners = CALCULATE(COUNT(prod_Customer[Customer_ID]), prod_Customer[Customer_Status] = "Joined")
     ```
 20. Created a new measure `Total Churn` using DAX formula.
     ```bash
-    Total Churn = SUM(prod_Churn[Churn_Status])
+    Total Churn = SUM(prod_Customer[Churn_Status])
     ```
 21. Created a new measure `Churn Rate` using DAX formula.
     ```bash
