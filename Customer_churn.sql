@@ -3,7 +3,7 @@ use customer_churn
 
 select * from dbo.Customer
 
--- Data Exploration – Check Nulls
+-- Data Exploration â€“ Check Nulls
 
 SELECT 
 
