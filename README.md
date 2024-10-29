@@ -1,4 +1,5 @@
 # Telecom-Customer-Churn-Analysis-and-Prediction
+![Customer_Churn_Analysis_page-0001](https://github.com/user-attachments/assets/facab5df-d6c0-48cb-ad07-38e32f4c271d)
 
 ## Tools Used - SQL, Power BI, Python
 
@@ -140,15 +141,13 @@ No. of rows=6418, No. of columns=32. The dataset consists of customer informatio
 
 ## Power BI Reports
 
-####  Customer Chrun Analysis - Home Page
-
-![Customer_Churn_Analysis_page-0001](https://github.com/user-attachments/assets/facab5df-d6c0-48cb-ad07-38e32f4c271d)
-
 ####  Customer Chrun Analysis - Summary
-![Customer_Churn_Analysis_page-0003](https://github.com/user-attachments/assets/9217b507-3b1e-4022-89cb-07bb3bf89ebc)
+![Customer_Churn_Analysis_page-0002](https://github.com/user-attachments/assets/1ef2f40c-0b24-4419-b2b3-e86facd50cc7)
 
 ####  Customer Chrun Analysis - Prediction
-![Customer_Churn_Analysis_page-0002](https://github.com/user-attachments/assets/1ef2f40c-0b24-4419-b2b3-e86facd50cc7)
+![Customer_Churn_Analysis_page-0003](https://github.com/user-attachments/assets/9217b507-3b1e-4022-89cb-07bb3bf89ebc)
+
+
 
 ## Predictions
 After training our model, these were the predictions our model made:
