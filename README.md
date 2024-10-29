@@ -138,22 +138,48 @@ No. of rows=6418, No. of columns=32. The dataset consists of customer informatio
 31. Created a Power BI report `Churn Analysis - Prediction` using various visualizations.
     ### Note: Please refer `Reports` folder for reports pdf.
 
-## Power BI Report
+## Power BI Reports
 
 ####  Customer Chrun Analysis - Home Page
 
+![Customer_Churn_Analysis_page-0001](https://github.com/user-attachments/assets/facab5df-d6c0-48cb-ad07-38e32f4c271d)
+
 ####  Customer Chrun Analysis - Summary
+![Customer_Churn_Analysis_page-0003](https://github.com/user-attachments/assets/9217b507-3b1e-4022-89cb-07bb3bf89ebc)
 
 ####  Customer Chrun Analysis - Prediction
+![Customer_Churn_Analysis_page-0002](https://github.com/user-attachments/assets/1ef2f40c-0b24-4419-b2b3-e86facd50cc7)
 
 ## Predictions
 After training our model, these were the predictions our model made:
-1. Count of people who will churn in future (Predicted Churners) was found to be 378.
-2. Out of 378 predicted churners, 246 were females and 132 were males.
-3. Maximum number (135) of predicted churners were of the age group greater than 50.
-4. Maximum number (193) of predicted churners were unmarried.
-5. Maximum number (106) of predicted churners were those who were having their tenure group equal to or greater than 2 years.
-6. Maximum number (192) of predicted churners were those who were using credit card services.
-7. Maximum number (355) of predicted churners were those who were having month-to-month contract.
-8. Maximum number (44) of predicted churners were from Uttar Pradesh, followed by Maharashtra(40), Tamil Nadu(37), Karnataka(29), and Andhra Pradesh(24).
+1. Count of people who will churn in future (Predicted Churners) was found to be 372.
+2. Out of 378 predicted churners, 241 were females and 131 were males.
+3. Maximum number (123) of predicted churners were of the age group greater than 50.
+4. Maximum number (189) of predicted churners were unmarried.
+5. Maximum number (104) of predicted churners were those who were having their tenure group equal to or greater than 2 years.
+6. Maximum number (190) of predicted churners were those who were using credit card services.
+7. Maximum number (358) of predicted churners were those who were having month-to-month contract.
+8. Maximum number (42) of predicted churners were from Uttar Pradesh, followed by Maharashtra(39), Tamil Nadu(36), Karnataka(30), and Andhra Pradesh(24).
+
+### Actionable Strategies to Reduce Churn:
+
+_Targeted Retention for Older and Female Customers:_
+Design marketing campaigns specifically addressing the needs and preferences of older customers (over 50). For example, tailor services to offer more stability, easier accessibility, and reliable support.
+Initiate personalized communication, offering female customers targeted promotions or loyalty incentives to encourage retention.
+
+_Incentivize Longer Contracts:_
+Create incentive programs for customers on month-to-month contracts to switch to yearly or two-year plans. Offer discounted rates, additional benefits, or bundled services to encourage this transition.
+
+_Customer Loyalty and Rewards:-
+Introduce loyalty programs rewarding customers based on their tenure and engagement. This can reduce the risk of long-tenure customers churning due to unmet expectations or overlooked engagement opportunities.
+
+_Credit Card Rewards Program:_
+Launch a rewards program specifically targeting customers who pay via credit cards. This could include cashback offers, bill discounts, or loyalty points to create a positive payment experience.
+
+_Regional Action Plans:_
+Conduct a deeper analysis in high-churn states like Uttar Pradesh, Maharashtra, Tamil Nadu, Karnataka, and Andhra Pradesh to understand localized pain points. Implement region-specific campaigns to address customer needs and improve the service experience.
+
+_Special Offers for Unmarried Customers:_
+
+Create community or interest-based offers to engage unmarried customers, like personalized plans, discounts for referrals, or family-oriented benefits for those considering a family in the future.
 
