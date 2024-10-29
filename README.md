@@ -162,24 +162,23 @@ After training our model, these were the predictions our model made:
 8. Maximum number (42) of predicted churners were from Uttar Pradesh, followed by Maharashtra(39), Tamil Nadu(36), Karnataka(30), and Andhra Pradesh(24).
 
 ### Actionable Strategies to Reduce Churn:
+- **Targeted Retention for Older and Female Customers:**  
+  Design marketing campaigns specifically addressing the needs and preferences of older customers (over 50). For example, tailor services to offer more stability, easier accessibility, and reliable support.  
+  Initiate personalized communication, offering female customers targeted promotions or loyalty incentives to encourage retention.  
 
-_Targeted Retention for Older and Female Customers:_
-Design marketing campaigns specifically addressing the needs and preferences of older customers (over 50). For example, tailor services to offer more stability, easier accessibility, and reliable support.
-Initiate personalized communication, offering female customers targeted promotions or loyalty incentives to encourage retention.
+- **Incentivize Longer Contracts:**  
+  Create incentive programs for customers on month-to-month contracts to switch to yearly or two-year plans. Offer discounted rates, additional benefits, or bundled services to encourage this transition.  
 
-_Incentivize Longer Contracts:_
-Create incentive programs for customers on month-to-month contracts to switch to yearly or two-year plans. Offer discounted rates, additional benefits, or bundled services to encourage this transition.
+- **Customer Loyalty and Rewards:**  
+  Introduce loyalty programs rewarding customers based on their tenure and engagement. This can reduce the risk of long-tenure customers churning due to unmet expectations or overlooked engagement opportunities.  
 
-_Customer Loyalty and Rewards:-
-Introduce loyalty programs rewarding customers based on their tenure and engagement. This can reduce the risk of long-tenure customers churning due to unmet expectations or overlooked engagement opportunities.
+- **Credit Card Rewards Program:**  
+  Launch a rewards program specifically targeting customers who pay via credit cards. This could include cashback offers, bill discounts, or loyalty points to create a positive payment experience.  
 
-_Credit Card Rewards Program:_
-Launch a rewards program specifically targeting customers who pay via credit cards. This could include cashback offers, bill discounts, or loyalty points to create a positive payment experience.
+- **Regional Action Plans:**  
+  Conduct a deeper analysis in high-churn states like Uttar Pradesh, Maharashtra, Tamil Nadu, Karnataka, and Andhra Pradesh to understand localized pain points. Implement region-specific campaigns to address customer needs and improve the service experience.  
 
-_Regional Action Plans:_
-Conduct a deeper analysis in high-churn states like Uttar Pradesh, Maharashtra, Tamil Nadu, Karnataka, and Andhra Pradesh to understand localized pain points. Implement region-specific campaigns to address customer needs and improve the service experience.
+- **Special Offers for Unmarried Customers:**  
+  Create community or interest-based offers to engage unmarried customers, like personalized plans, discounts for referrals, or family-oriented benefits for those considering a family in the future.  
 
-_Special Offers for Unmarried Customers:_
-
-Create community or interest-based offers to engage unmarried customers, like personalized plans, discounts for referrals, or family-oriented benefits for those considering a family in the future.
 
