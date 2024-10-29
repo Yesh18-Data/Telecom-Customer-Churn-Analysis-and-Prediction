@@ -138,13 +138,13 @@ No. of rows=6418, No. of columns=32. The dataset consists of customer informatio
 31. Created a Power BI report `Churn Analysis - Prediction` using various visualizations.
     ### Note: Please refer `Reports` folder for reports pdf.
 
-## Power BI Reports 
+## Power BI Report
 
-## Power BI Reports
-![image](https://github.com/user-attachments/assets/512ecf91-c0c7-42bc-bfec-9505871c0414)
-#### Churn Analysis - Summary
-![image](https://github.com/user-attachments/assets/29cad6bf-bbf3-407f-abc5-94b09de64855)
-#### Chain Analysis - Prediction
+####  Customer Chrun Analysis - Home Page
+
+####  Customer Chrun Analysis - Summary
+
+####  Customer Chrun Analysis - Prediction
 
 ## Predictions
 After training our model, these were the predictions our model made:
