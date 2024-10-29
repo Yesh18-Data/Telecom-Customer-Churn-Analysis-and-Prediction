@@ -27,20 +27,20 @@ Our framework uses below components:
 3. SQL Server Database - This is where our final data will be loaded and host our data warehouse, tables and views for final usage.
 
 ## Dataset Description
-No. of rows=6419, No. of columns=32. The dataset consists of customer information of a telecom company like Customer_ID, Gender, Age, Married, State, Number_of_Referrals, Tenure_in_Months, Value_Deal, Phone_Service, Multiple_Lines, Internet_Service, Internet_Type, Online_Security, Online_Backup, Device_Protection_Plan, Premium_Support, Streaming_TV, Streaming_Movies, Streaming_Music, Unlimited_Data, Contract, Paperless_Billing, Payment_Method, Monthly_Charge, Total_Charges, Total_Refunds, Total_Extra_Data_Charges, Total_Long_Distance_Charges, Total_Revenue, Customer_Status, Churn_Category, Churn_Reason.
+No. of rows=6418, No. of columns=32. The dataset consists of customer information of a telecom company like Customer_ID, Gender, Age, Married, State, Number_of_Referrals, Tenure_in_Months, Value_Deal, Phone_Service, Multiple_Lines, Internet_Service, Internet_Type, Online_Security, Online_Backup, Device_Protection_Plan, Premium_Support, Streaming_TV, Streaming_Movies, Streaming_Music, Unlimited_Data, Contract, Paperless_Billing, Payment_Method, Monthly_Charge, Total_Charges, Total_Refunds, Total_Extra_Data_Charges, Total_Long_Distance_Charges, Total_Revenue, Customer_Status, Churn_Category, Churn_Reason.
 
 ### Note: Please refer `Dataset` folder above for dataset.
 
 ## Project Workflow
 ### SQL (SSMS)
-1. Created a new database `db_Churn` in SQL Server Management Studio, after connecting to server.
+1. Created a new database `Customer_Churn` in SQL Server Management Studio, after connecting to server.
 2. Imported our CSV file using `Import Flat File` in SSMS and modified the columns by checking Allow Nulls checkbox for every column except for Candidate_ID (Primary Key), and changing bit datatype to varchar50 datatype to avoid errors on importing.
 3. After importing, performed data analysis using SQL queries.
-4. Created a new table `prod_Churn` from our previous table `stg_Churn` by replacing NULL values by 'None' or 'No' values.
-5. Created two views `vw_ChurnData` and `vw_JoinData` to be used later in predictive analysis.
+4. Created a new table `prod_Customer` from our previous table `Customer` by replacing NULL values by 'None' or 'No' values.
+5. Created two views `vw_Customer_Churn` and `vw_Customer_Join` to be used later in predictive analysis.
    ### Note: For Steps 3, 4 and 5, please refer to `SQL Queries` file above for all the queries used in data analysis.
 ### Power BI
-6. Connected Power BI to our SQL Server and imported `prod_Churn` table into our Power Query Editor using Transform Data option.
+6. Connected Power BI to our SQL Server and imported `prod_Customer` table into our Power Query Editor using Transform Data option.
 7. Created a new custom column `Churn_Status` and changed the datatype to Whole Number.
    ```bash
    = if [Customer_Status] = "Churned" then 1 else 0
@@ -52,22 +52,24 @@ No. of rows=6419, No. of columns=32. The dataset consists of customer informatio
      else if [Monthly_Charge] < 100 then "50-100"
      else ">100"
    ```
-9. Created a new table `mapping_AgeGrp` by referencing the `prod_Churn` table and removed all other columns except Age column and removed duplicates from Age column.
+9. Created a new table `mapping_AgeGrp` by referencing the `prod_Customer` table and removed all other columns except Age column and removed duplicates from Age column.
 10. Created a new custom column `Age_Group` in `mapping_AgeGrp` table.
     ```bash
     = if [Age] < 20 then "<20"
-      else if [Age] < 35 then "20-35"
-      else if [Age] < 50 then "35-50"
+      else if [Age] < 31 then "20-30"
+      else if [Age] < 41 then "31-40"
+      else if [Age] < 51 then "41-50"
       else ">50"
     ```
 11. Created a new custom column `AgeGrpSorting` in `mapping_AgeGrp` table and changed datatype to Whole Number.
     ```bash
     = if [Age_Group] = "<20" then 1
-      else if [Age_Group] = "20-35" then 2
-      else if [Age_Group] = "35-50" then 3
-      else 4
+      else if [Age_Group] = "20-30" then 2
+      else if [Age_Group] = "31-40" then 3
+      else if [Age_Group] = "41-50" then 4
+      else 5
     ```
-12. Created a new table `mapping_TenureGrp` by referncing the `prod_Churn` table and removed all other columns except Tenure_in_Months column and removed duplicates.
+12. Created a new table `mapping_TenureGrp` by referncing the `prod_Customer` table and removed all other columns except Tenure_in_Months column and removed duplicates.
 13. Created a new custom column `Tenure_Group` in `mapping_TenureGrp` table.
     ```bash
     = if [Tenure_in_Months] < 6 then "< 6 Months"
@@ -119,8 +121,8 @@ No. of rows=6419, No. of columns=32. The dataset consists of customer informatio
 ### Python (Jupyter Notebook)
 23. Connected SQL database to Jupyter Notebook.
 24. Performed predictive analytics using machine learning algorithm `Random Forest`.
-25. Trained our model on `vw_ChurnData` view created earlier on Step 5 and achieved an accuracy of 84%.
-26. Tested our model on `vw_JoinData` view created earlier on Step 5.
+25. Trained our model on `vw_Customer_Churn` view created earlier on Step 5 and achieved an accuracy of 84%.
+26. Tested our model on `vw_Customer_Join` view created earlier on Step 5.
 27. Exporting the `Predictions` table into the SQL database using `to_sql`.
     ### Note: Please refer `Jupyter Notebook` folder for detailed machine learning code.
 ## Power BI
@@ -136,7 +138,9 @@ No. of rows=6419, No. of columns=32. The dataset consists of customer informatio
 31. Created a Power BI report `Churn Analysis - Prediction` using various visualizations.
     ### Note: Please refer `Reports` folder for reports pdf.
 
-## Power BI Dashboard
+## Power BI Reports 
+
+## Power BI Reports
 ![image](https://github.com/user-attachments/assets/512ecf91-c0c7-42bc-bfec-9505871c0414)
 #### Churn Analysis - Summary
 ![image](https://github.com/user-attachments/assets/29cad6bf-bbf3-407f-abc5-94b09de64855)
