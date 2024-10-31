@@ -10,6 +10,7 @@
 4. [Project Workflow](#project-workflow)
 5. [Power BI Dashboard](#power-bi-dashboard)
 6. [Predictions](#predictions)
+7. [Actionable Strategies to reduce Churn](#strategies).
 
 ## Project Objective
 Create an entire ETL process in a database and a Power BI dashboard to utilize the Customer Data and achieve below goals:                                 
