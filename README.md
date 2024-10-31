@@ -1,5 +1,7 @@
-# Telecom-Customer-Churn-Analysis-and-Prediction
+# Telecom-Customer-Churn-Analysis-and-Prediction 
 ![Customer_Churn_Analysis_page-0001](https://github.com/user-attachments/assets/facab5df-d6c0-48cb-ad07-38e32f4c271d)
+## Power BI Report
+[View the Power BI Report](https://app.powerbi.com/view?r=eyJrIjoiOTdmMzcxMjItM2Q1Ni00ZjcwLWEzMjQtZTViYmM1MGZiNzY0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 ## Tools Used - SQL, Power BI, Python
 
