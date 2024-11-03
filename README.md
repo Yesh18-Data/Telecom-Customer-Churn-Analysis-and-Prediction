@@ -3,7 +3,7 @@
 ## Power BI Report
 [View the Power BI Report](https://app.powerbi.com/view?r=eyJrIjoiOTdmMzcxMjItM2Q1Ni00ZjcwLWEzMjQtZTViYmM1MGZiNzY0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
-## Tools Used - SQL, Power BI, Python
+## Tools Used - MS SQL Server , Power BI Desktop, Service , Python
 
 ## Table of Contents
 1. [Project Objective](#project-objective)
@@ -15,7 +15,7 @@
 7. [Actionable Strategies to Reduce Churn](#actionable-strategies-to-reduce-churn)
 
 ## Project Objective
-Create an entire ETL process in a database and a Power BI dashboard to utilize the Customer Data and achieve below goals:                                 
+Create an entire ETL process in a database and a Power BI Reports to utilize the Customer Data and achieve below goals:                                 
 1. Analyze Customer Data at below levels: 
      a. Demographic
      b. Geographic
